@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Maklowicz</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+</head>
+<body>
+
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#" onclick="w3_close(); showGrid(1)" class="w3-bar-item w3-button">Food Page 1</a>
+  <a href="#" onclick="w3_close(); showGrid(2)" class="w3-bar-item w3-button">Food Page 2</a>
+  <a href="#" onclick="w3_close(); showGrid(3)" class="w3-bar-item w3-button">Food Page 3</a>
+  <a href="#" onclick="w3_close(); showGrid(4)" class="w3-bar-item w3-button">Food Page 4</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-center w3-padding-16">My Food</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+
+  
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food1">
+    <div class="w3-quarter">
+      <img src="food/sandwich.jpg" alt="Sandwich" style="width:100%">
+      <h3>The Sandwich</h3>
+      <p>A delightful combination of fresh ingredients nestled between two slices of artisanal bread.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="food/koktajl.jpg" alt="Steak" style="width:100%">
+      <h3>Coctail</h3>
+      <p>A vibrant and refreshing mixed drink, perfect for any occasion.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="food/Icecream.jpg" alt="Cherries" style="width:100%">
+      <h3>Ice Cream</h3>
+      <p>Creamy and indulgent, this frozen treat is a delightful escape into sweetness.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="food/tiramisu.jpg" alt="Pasta and Wine" style="width:100%">
+      <h3>Tiramisu</h3>
+      <p>An exquisite Italian dessert layering coffee-soaked ladyfingers and mascarpone cream.</p>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food2" style="display: none;">
+    <div class="w3-quarter">
+      <img src="food/salmon.jpg" alt="Popsicle" style="width:100%">
+      <h3>Salmon</h3>
+      <p> Grilled to perfection, this salmon dish is a savory delight for seafood enthusiasts.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="food/stek z kalmara.jpg" alt="Salmon" style="width:100%">
+      <h3>Squid Steak</h3>
+      <p>A culinary adventure featuring succulent squid prepared as a delectable steak.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="food/poledwica.jpg" alt="Sandwich" style="width:100%">
+      <h3> Fillet Steak </h3>
+      <p>Tender and juicy, this fillet steak promises a savory dining experience.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="food/sushi.jpg" alt="Croissant" style="width:100%">
+      <h3>Sushi</h3>
+      <p>Artfully crafted, these bite-sized delights showcase the beauty of Japanese cuisine.</p>
+    </div>
+  </div>
+
+
+    <!-- Third Photo Grid-->
+    <div class="w3-row-padding w3-padding-16 w3-center" id="food3" style="display: none;">
+      <div class="w3-quarter">
+        <img src="food/rosol.jpg" alt="Popsicle" style="width:100%">
+        <h3>Fish Broth</h3>
+        <p>A comforting and flavorful soup, the fish broth is a warm embrace for the palate.</p>
+      </div>
+      <div class="w3-quarter">
+        <img src="food/zupa.jpg" alt="Salmon" style="width:100%">
+        <h3>Pumpkin Cream</h3>
+        <p>A velvety and rich pumpkin cream, capturing the essence of autumn in every spoonful.</p>
+      </div>
+      <div class="w3-quarter">
+        <img src="food/risotto.jpg" alt="Sandwich" style="width:100%">
+        <h3>Risotto</h3>
+        <p>Creamy and aromatic, this Italian rice dish is a culinary masterpiece.</p>
+      </div>
+      <div class="w3-quarter">
+        <img src="food/makaron.jpg" alt="Croissant" style="width:100%">
+        <h3>Pasta Alfredo</h3>
+        <p>Silky pasta coated in a luscious Alfredo sauce, a timeless and comforting classic.</p>
+      </div>
+    </div>
+
+
+      <!-- Fourth Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food4" style="display: none;">
+    <div class="w3-quarter">
+      <img src="food/plating.jpg" alt="Popsicle" style="width:100%">
+      <h3>Roast Veal</h3>
+      <p>Succulent and flavorful, roast veal is a savory dish that satisfies meat lovers.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="food/carpaccio.jpg" alt="Salmon" style="width:100%">
+      <h3>Carpaccio</h3>
+      <p> A culinary work of art, carpaccio features thinly sliced raw meat or fish, seasoned to perfection.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="food/ratatouille.jpg" alt="Sandwich" style="width:100%">
+      <h3>Ratatouille</h3>
+      <p>A medley of vibrant vegetables, ratatouille is a celebration of colors and flavors.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="food/krewetki.jpg" alt="Croissant" style="width:100%">
+      <h3>Shrimps</h3>
+      <p>Plump and succulent, these shrimps are a seafood delicacy that promises to tantalize taste buds.</p>
+    </div>
+  </div>
+
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black" onclick="changeGrid(-1)">«</a>
+      <a href="#" id="page1" class="w3-bar-item w3-button w3-black w3-hover-black" onclick="showGrid(1)">1</a>
+      <a href="#" id="page2" class="w3-bar-item w3-button w3-hover-black" onclick="showGrid(2)">2</a>
+      <a href="#" id="page3" class="w3-bar-item w3-button w3-hover-black" onclick="showGrid(3)">3</a>
+      <a href="#" id="page4" class="w3-bar-item w3-button w3-hover-black" onclick="showGrid(4)">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black" onclick="changeGrid(1)">»</a>
+    </div>
+  </div>
+
+  
+  <hr id="about"> 
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h3>About Me</h3><br>
+    <img src="blog/rm.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="600" height="133">
+    <div class="w3-padding-32">
+      <h4><b>I am Robert Makłowicz!</b></h4>
+      <h6><i>Culinary Enthusiast: Infusing Flavor into Every Dish</i></h6>
+      <p>Polish journalist, food critic, writer, columnist and traveller. At the turn of 1989 and 1990 he lived in the United Kingdom, where he worked for several months as a labourer in Kingston upon Thames. During his stay in exile, he got to know various cuisines of the world, which, after his return to Poland in 1990, led him to become a food critic. 
+        In March 2020, he launched his own YouTube channel, where he publishes videos on culinary and historical topics. In 2022, he became an ambassador of the Wrocław Year of Good Relations, a campaign to draw attention to the growing problem of loneliness.
+      </p>
+    </div>
+  </div>
+  <hr> 
+  
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>CONTACT</h3>
+      <p>"The meat is hot you have to be careful that it doesn't break into atoms."</p>
+      <p>"The three most important words for Poland, Poles, our culture, philosophy: vodka, war and kiełbasa are all feminine."</p>
+      <p>"You have to stir well in the pot, just like in life."</p>
+      <p>kontakt@maklowicz.pl</p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>BLOG POSTS</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="blog/sfw.jpg" class="w3-left w3-margin-right" style="width:70px; height:70px;">
+
+          <span class="w3-large">Street Food Wonders</span><br>
+          <span>Delicious street food that will make your mouth water.</span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="blog/ss.jpg" class="w3-left w3-margin-right" style="width:70px; height:70px;">
+          <span class="w3-large">Seasonal Specials</span><br>
+          <span>Indulge in the freshness of our seasonal specials.</span>
+        </li> 
+      </ul>
+    </div>
+
+    <div class="w3-third w3-serif">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">International Cuisine </span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Quick & Easy</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Seafood Delights</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Home Cooking </span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">France</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Drinks</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Flavors</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Travel</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Vegetarian/Vegan</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dressing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Healthy Choices </span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Breakfast Delights </span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Comfort Food</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Hearty Soups</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Homemade Sauces</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Culinary Experiments</span>
+      </p>
+    </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+  
+   <script>
+    let currentGrid = 1;
+  
+    function showGrid(gridNumber) {
+      document.getElementById('food' + currentGrid).style.display = 'none';
+  
+      document.getElementById('food' + gridNumber).style.display = 'block';
+  
+      document.getElementById('page' + currentGrid).classList.remove('w3-black');
+  
+      document.getElementById('page' + gridNumber).classList.add('w3-black');
+  
+      currentGrid = gridNumber;
+    }
+
+    function changeGrid(direction) {
+  let newGrid = currentGrid + direction;
+
+
+  if (newGrid >= 1 && newGrid <= 4) {
+    showGrid(newGrid);
+  } else if (newGrid === 0) {
+    showGrid(4);
+  } else if (newGrid === 5) {
+    showGrid(1);
+  }
+}
+
+  
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
+  
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+  </script>
+  
+
+</body>
+</html>
